@@ -4,10 +4,10 @@ class Login{
     constructor(form, fields){
         this.form = form;
         this.fields = fields;
-        this.submitonValiation();
+        this.validateonSubmit();
     }
 
-    submitonValiation(){
+    validateonSubmit(){
        let self = this;
 
        this.form.addEventListener("submit", (e) => {
@@ -20,11 +20,14 @@ class Login{
     }
 }
 
-
 if(form){
     const fields = ["username", "password"];
     const validation = new Login(form, fields);
 }
+
+
+
+
 
 
 
