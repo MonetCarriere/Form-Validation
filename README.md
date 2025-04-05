@@ -7,7 +7,7 @@ FIRST COMMIT
 
 
 
-Here, a class named Login is defined. It's designed to handle form validation for when the login form is submitted.
+Here, a class named Login is defined. It's designed to handle form validation for when the user submits the form.
 
 It takes two parameters:
 * form → The HTML form element.
