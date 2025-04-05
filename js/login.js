@@ -1,28 +1,32 @@
-class Login {
-    constructor(form, fields) {
+let form = document.querySelector=(".loginForm");
+
+class Login{
+    constructor(form, fields){
         this.form = form;
         this.fields = fields;
-        this.validateonSubmit();
+        this.submitonValiation();
     }
 
-    validateonSubmit() {
-        let self = this;
+    submitonValiation(){
+       let self = this;
 
-        this.form.addEventListener("submit", (e) => {
-            e.preventDefault();
-            self.fields.forEach((field) => {
-                const input = document.querySelector(`#${field}`);
-                console.log(input.value);
-            });
-        });
+       this.form.addEventListener("submit", (e) => {
+        e.preventDefault()
+        self.fields.forEach(field => {
+            const input = document.querySelector(`#${field}`);
+            console.log(input.value);
+        })
+       })
     }
 }
 
-const form = document.querySelector(".loginForm");
-if (form) {
+
+if(form){
     const fields = ["username", "password"];
-    const validator = new Login(form, fields);
+    const validation = new Login(form, fields);
 }
+
+
 
 
 
