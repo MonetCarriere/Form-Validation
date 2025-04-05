@@ -8,7 +8,9 @@ FIRST COMMIT
 
 
 
-Here, a class named Login is defined. It's designed to handle form validation for when the user submits the form.
+Here, we want to select the class associated with the entire form element and store it in a variable named form.
+
+A class named Login is defined. It's designed to handle form validation for when the user submits the form.
 
 It takes two parameters:
 * form → The HTML form element.
